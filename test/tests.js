@@ -1,11 +1,9 @@
 // IMPORT MODULES under test here:
-// import { add } from '../calculator.js';
+import { add } from '../calculations.js';
 
 const test = QUnit.test;
 
-function add(num1, num2) {
-    return num1 + num2;
-}
+
 // name your test by what it is testing
 test('adds two numbers 5 and 3', (expect) => {
     //1. Arrange
@@ -38,3 +36,5 @@ test('adds two numbers 4 and 3', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+
+//export functions
