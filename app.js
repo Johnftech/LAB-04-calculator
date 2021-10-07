@@ -1,7 +1,7 @@
 // import functions
-
+import { add } from './calculations.js';
 // reference needed DOM elements
-
+console.log(add(50, 120));
 
 // set event listeners 
     // get user input(s)
