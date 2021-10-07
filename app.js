@@ -22,6 +22,14 @@ addButton.addEventListener('click', () => {
     addAnswer.textContent = sum;
 });
 
+subButton.addEventListener('click', () => {
+    console.log('subtract button was clicked');
+    const num1 = +subNumber1.value;
+    const num2 = +subNumber2.value;
+    const sub = subtract(num1, num2);
+    subAnswer.textContent = sub;
+});
+
 
     // get user input(s)
     // do any needed work with the value(s)
