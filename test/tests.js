@@ -30,7 +30,7 @@ test('adds two numbers 4 and 3', (expect) => {
 
     //2. Act 
     // Call the function you're testing and set the result to a const
-    const actual = subtract(x, y); // use your function here
+    const actual = add(x, y); // use your function here
 
     //3. Expect
     // Make assertions about what is expected versus the actual result
@@ -47,7 +47,7 @@ test('subtracts two numbers 5 and 4', (expect) => {
 
     //2. Act 
     // Call the function you're testing and set the result to a const
-    const actual = add(x, y); // use your function here
+    const actual = subtract(x, y); // use your function here
 
     //3. Expect
     // Make assertions about what is expected versus the actual result
