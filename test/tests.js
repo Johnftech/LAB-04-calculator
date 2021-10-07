@@ -55,4 +55,16 @@ test('subtracts two numbers 5 and 4', (expect) => {
 
 });
 
+test('this multiplies two numbers 6 and 6', (expect) => {
+    const x = 6;
+    const y = 6;
+    const expected = 36;
+
+    const actual = mult(x, y);
+
+    expect.equal(actual, expected);
+
+
+});
+
 //export functions
