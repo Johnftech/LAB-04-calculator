@@ -12,6 +12,11 @@ const subNumber1 = document.getElementById('sub-number-1');
 const subNumber2 = document.getElementById('sub-number-2');
 const subButton = document.getElementById('sub-button');
 const subAnswer = document.getElementById('sub-answer');
+//multiplication
+const multNumber1 = document.getElementById('mult-number-1');
+const multNumber2 = document.getElementById('mult-number-2');
+const multButton = document.getElementById('mult-button');
+const multAnswer = document.getElementById('mult-answer');
 
 // set event listeners 
 //event listener goes on button
@@ -29,6 +34,20 @@ subButton.addEventListener('click', () => {
     const sub = subtract(num1, num2);
     subAnswer.textContent = sub;
 });
+
+/*
+const multNumber1 = document.getElementById('mult-number-1');
+const multNumber2 = document.getElementById('mult-number-2');
+const multButton = document.getElementById('mult-button');
+const multAnswer = document.getElementById('mult-answer'); */
+
+multButton.addEventListener('click', () => {
+    const num1 = +multNumber1.value;
+    const num2 = +multNumber2.value;
+    const mult = mult(num1, num2);
+    multAnswer.textContent = mult;
+});
+
 
 
     // get user input(s)
