@@ -1,5 +1,5 @@
 // import functions
-import { add, subtract } from './calculations.js';
+import { add, subtract, multiply } from './calculations.js';
 // reference needed DOM elements
 console.log(add(50, 120));
 //addition
@@ -44,7 +44,7 @@ const multAnswer = document.getElementById('mult-answer'); */
 multButton.addEventListener('click', () => {
     const num1 = +multNumber1.value;
     const num2 = +multNumber2.value;
-    const mult = mult(num1, num2);
+    const mult = multiply(num1, num2);
     multAnswer.textContent = mult;
 });
 
