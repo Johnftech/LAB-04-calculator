@@ -17,6 +17,11 @@ const multNumber1 = document.getElementById('mult-number-1');
 const multNumber2 = document.getElementById('mult-number-2');
 const multButton = document.getElementById('mult-button');
 const multAnswer = document.getElementById('mult-answer');
+// division
+const divNumber1 = document.getElementById('div-number-1');
+const divNumber2 = document.getElementById('div-number-2');
+const divButton = document.getElementById('div-button');
+const divAnswer = document.getElementById('div-answer');
 
 // set event listeners 
 //event listener goes on button
@@ -46,6 +51,10 @@ multButton.addEventListener('click', () => {
     const num2 = +multNumber2.value;
     const mult = multiply(num1, num2);
     multAnswer.textContent = mult;
+});
+
+divButton.addEventListener('click', () => {
+    console.log('division button has been clicked');
 });
 
 
