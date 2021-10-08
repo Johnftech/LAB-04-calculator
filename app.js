@@ -1,5 +1,5 @@
 // import functions
-import { add, subtract, multiply } from './calculations.js';
+import { add, subtract, multiply, divide } from './calculations.js';
 // reference needed DOM elements
 console.log(add(50, 120));
 //addition
@@ -55,6 +55,10 @@ multButton.addEventListener('click', () => {
 
 divButton.addEventListener('click', () => {
     console.log('division button has been clicked');
+    const num1 = +divNumber1.value;
+    const num2 = +divNumber2.value;
+    const div = divide(num1, num2);
+    divAnswer.textContent = div;
 });
 
 
